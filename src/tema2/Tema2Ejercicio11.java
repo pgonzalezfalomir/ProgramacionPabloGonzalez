@@ -11,9 +11,9 @@ public class Tema2Ejercicio11 {
         System.out.println("Dame otro número");
         int num2 = in.nextInt();
         System.out.println("Dame otro número");
-        int num3 = in.nextInt();
+        int nume3 = in.nextInt();
 
-        if ((num1 + 1 == num2 && num2 + 1 == num3) || (num1 - 1 == num2 && num2 - 1 == num3)) {
+        if ((num1 + 1 == num2 && num2 + 1 == nume3) || (num1 - 1 == num2 && num2 - 1 == nume3)) {
             System.out.println("Los números que has introducido son consecutivos.");
         } else {
             System.out.println("Los números que has introducido no son consecutivos.");

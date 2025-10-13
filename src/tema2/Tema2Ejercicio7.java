@@ -9,13 +9,13 @@ public class Tema2Ejercicio7 {
         System.out.println("Dame un número");
         double num1 = in.nextDouble();
         System.out.println("Dame otro número");
-        double num2 = in.nextDouble();
+        double nume2 = in.nextDouble();
 
-        if (num1 > num2) {
-            double resta = num1 - num2;
+        if (num1 > nume2) {
+            double resta = num1 - nume2;
             System.out.println("La resta es " + resta);
-        } if (num2 > num1) {
-            double resta = num2 - num1;
+        } if (nume2 > num1) {
+            double resta = nume2 - num1;
             System.out.println("La resta es " + resta);
         }
     }

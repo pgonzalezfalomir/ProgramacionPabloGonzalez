@@ -10,7 +10,7 @@ public class Tema2Ejercicio3 {
         System.out.println("Dime la altura de un triángulo");
         double altura = in.nextDouble();
 
-        double superficie = base * altura / 2;
-        System.out.println("La superfície de un triángulo es " + superficie);
+        double superficies = base * altura / 2;
+        System.out.println("La superfície de un triángulo es " + superficies);
     }
 }

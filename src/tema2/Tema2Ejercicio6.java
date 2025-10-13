@@ -7,13 +7,13 @@ public class Tema2Ejercicio6 {
 
         Scanner in = new Scanner(System.in);
         System.out.println("Dame un número");
-        double numero = in.nextDouble();
+        double numeros = in.nextDouble();
 
-        if (numero == 0) {
+        if (numeros == 0) {
             System.out.println("El numero que me has dado es 0");
-        } if (numero > 0) {
+        } if (numeros > 0) {
             System.out.println("El número que me has dado es positivo.");
-        } if (numero < 0) {
+        } if (numeros < 0) {
             System.out.println("El número que me has dado es negativo.");
         }
     }

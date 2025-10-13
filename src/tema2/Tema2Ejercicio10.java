@@ -11,9 +11,9 @@ public class Tema2Ejercicio10 {
         System.out.println("Dame otro número");
         double num2 = in.nextDouble();
         System.out.println("Dame otro número");
-        double num3 = in.nextDouble();
+        double nume3 = in.nextDouble();
 
-        if (num1 < num2 && num2 < num3) {
+        if (num1 < num2 && num2 < nume3) {
             System.out.println("Los números que has introducido estan ordenados de menor a mayor.");
         } else {
             System.out.println("Los números que has introducido no estan ordenados de menor a mayor.");

@@ -22,7 +22,7 @@ public class Tema2Ejercicio12 {
         } else if (b >= c && c >= a) {
             System.out.println(b + " >= " + c + " >= " + a);
         } else if (c >= a && a >= b) {
-            System.out.println(c + " >= " + a + " >= " + b);
+            System.out.println(c + "  >= " + a + " >= " + b);
         } else { // c >= b && b >= a
             System.out.println(c + " >= " + b + " >= " + a);
         }

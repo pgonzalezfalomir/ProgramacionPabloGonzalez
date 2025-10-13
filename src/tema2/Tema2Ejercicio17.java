@@ -12,7 +12,7 @@ public class Tema2Ejercicio17 {
         double b = in.nextDouble();
 
         System.out.println("Introduce 0, 1 o 2");
-        int num = in.nextInt();
+        int nume = in.nextInt();
 
         double superficie_cuadrado = a * a;
         double perimetro_cuadrado = a + a + a + a;
@@ -22,7 +22,7 @@ public class Tema2Ejercicio17 {
 
         double superficie_triangulo = a * b / 2;
 //swicth
-        switch (num) {
+        switch (nume) {
             case 0:
                 System.out.println("La superfície y el perímetro de un cuadrado con las medidas que has dado son = " + superficie_cuadrado + ", " + perimetro_cuadrado);
                 break;

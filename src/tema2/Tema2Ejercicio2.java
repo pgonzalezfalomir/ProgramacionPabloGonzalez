@@ -12,8 +12,8 @@ public class Tema2Ejercicio2 {
         double altura = in.nextDouble();
 
         double superficie = base * altura;
-        double perimetro = (base * 2) + (altura * 2);
+        double perimetros = (base * 2) + (altura * 2);
         System.out.println("La superfície del rectángulo es " + superficie);
-        System.out.println("El perímetro del rectángulo es " + perimetro);
+        System.out.println("El perímetro del rectángulo es " + perimetros);
     }
 }

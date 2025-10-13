@@ -9,13 +9,13 @@ public class Tema2Ejercicio16 {
         System.out.println("Introduce el dinero que tienes");
         double dinero = in.nextDouble();
         System.out.println("Introduce E (si son dólares) o D (si son euros)");
-        char letra = in.next().charAt(0);
+        char letras = in.next().charAt(0);
 
-        if (letra == 'D' || letra == 'd') {
+        if (letras == 'D' || letras == 'd') {
             double resultado = dinero * 1.16;
             System.out.println("El resultado es: " + resultado + "$");
         }
-        else if (letra == 'E' || letra == 'e') {
+        else if (letras == 'E' || letras == 'e') {
             double resultado = dinero / 1.16;
             System.out.println("El resultado es: " + resultado + "€");
         }

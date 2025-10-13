@@ -12,7 +12,7 @@ public class Tema2Ejercicio15 {
         int any = in.nextInt();
 
         int dias = 0;
-        boolean mesValido = true;
+        boolean mesvalido = true;
 
         if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12) {
             dias = 31;
@@ -26,11 +26,11 @@ public class Tema2Ejercicio15 {
             }
         } else {
             System.out.println("Mes inválido. Debe ser entre 1 y 12.");
-            mesValido = false; // marcamos que no es válido
+            mesvalido = false; // marcamos que no es válido
         }
 
         // Solo imprimimos si el mes es válido
-        if (mesValido) {
+        if (mesvalido) {
             System.out.println("El mes " + mes + " del año " + any + " tiene " + dias + " días.");
         }
     }

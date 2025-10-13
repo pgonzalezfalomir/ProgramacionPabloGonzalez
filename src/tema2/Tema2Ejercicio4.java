@@ -10,16 +10,16 @@ public class Tema2Ejercicio4 {
         System.out.println("Dame otro número");
         int num2 = in.nextInt();
         System.out.println("Dame otro número");
-        int num3 = in.nextInt();
+        int nume3 = in.nextInt();
 
-        if (num1 > num2 && num1 > num3) {
+        if (num1 > num2 && num1 > nume3) {
             System.out.println("El número mayor es " + num1);
-        } if (num2 > num1 && num2 > num3) {
+        } if (num2 > num1 && num2 > nume3) {
             System.out.println("El número mayor es " + num2);
-        } if (num3 > num1 && num3 > num2) {
-            System.out.println("El número mayor es " + num3);
+        } if (nume3 > num1 && nume3 > num2) {
+            System.out.println("El número mayor es " + nume3);
         } else {
-            System.out.println("Los números " + num1 + ", " + num2 + " y " + num3 + " son iguales.");
+            System.out.println("Los números " + num1 + ", " + num2 + " y " + nume3 + " son iguales.");
 
         }
     }

@@ -7,7 +7,7 @@ public class Tema2Ejercicio13 {
 
         Scanner in = new Scanner(System.in);
         System.out.println("Introduce las horas");
-        int horas = in.nextInt();
+        int hora = in.nextInt();
         System.out.println("Introduce los minutos");
         int minutos = in.nextInt();
         System.out.println("Introduce los segundos");
@@ -15,7 +15,7 @@ public class Tema2Ejercicio13 {
 
 //comprovar que les dades son correcte
 
-        if (horas > 24) {
+        if (hora > 24) {
             System.out.println("No es un valor correcto");
         } else if (minutos > 60) {
             System.out.println("No es un valor correcto");
@@ -31,13 +31,13 @@ public class Tema2Ejercicio13 {
             }
             if (minutos == 60) {
                 minutos = 00;
-                horas++;
+                hora++;
             }
-            if (horas == 24) {
-                horas = 00;
+            if (hora == 24) {
+                hora = 00;
             }
 
-            System.out.println("La hora con un segundo más es = " + horas + ":" + minutos + ":" + segundos);
+            System.out.println("La hora con un segundo más es = " + hora + ":" + minutos + ":" + segundos);
         }
 
     }
