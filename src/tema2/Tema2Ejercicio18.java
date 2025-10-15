@@ -16,6 +16,7 @@ public class Tema2Ejercicio18 {
             double raiz = Math.sqrt(num);
             System.out.println("La raíz cuadrada de " + num + " es " + raiz);
         }
+        // haaland de temu
 
     }
 }
