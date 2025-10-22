@@ -11,6 +11,7 @@ public class Tema2Ejercicio20 {
         System.out.println("Introduce otro número");
         int num2 = in.nextInt();
 
+        //simplificar. con un solo for e if, te valdría
         if (num1 > num2) {
             System.out.println("El mayor es " + num1);
         } else {

@@ -4,9 +4,9 @@ import java.util.Scanner;
 
 public class Tema2Ejercicio30 {
     public static void main(String[] args) {
-
+//poner aqui todas las inicializaciones
         char continuar = 's';
-
+double n2;
         while (continuar == 's') {
 
             Scanner in = new Scanner(System.in);
@@ -19,7 +19,7 @@ public class Tema2Ejercicio30 {
             switch (operador) {
                 case '+':
                     System.out.println("Introduce otro número:");
-                    double n2 = in.nextDouble();
+                    n2 = in.nextDouble();
                     double res_suma = n1 + n2;
                     System.out.println(n1 + " - " + n2 + " = " + res_suma);
                     break;
