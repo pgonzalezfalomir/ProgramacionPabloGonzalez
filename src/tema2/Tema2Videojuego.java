@@ -415,7 +415,7 @@ public class Tema2Videojuego {
                     break;
                 }
             }
-            // Repetición bucle hasta que jugador1 / jugador
+            // Repetición bucle hasta que jugador1 / jugador2 sea eliminado
             ronda++;
         }
     }
