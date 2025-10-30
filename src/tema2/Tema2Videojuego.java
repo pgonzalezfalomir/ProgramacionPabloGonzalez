@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class Tema2Videojuego {
     // Muestra barra de vida con guiones
     public static void mostrarBarraVida(int vidaActual, int vidaMaxima, String nombre) {
-        int longitudBarra = 20; // Número  bloques de la barra
+        int longitudBarra = 20;
         int bloques = (int) ((vidaActual / (double) vidaMaxima) * longitudBarra);
         if (bloques < 0) bloques = 0;
 
