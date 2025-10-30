@@ -64,9 +64,9 @@ public class Tema2Videojuego {
                         // Elección asesino
                         System.out.println("Tu personaje es asesino");
                         ataque = 150;
-                        velocidad = 150;
-                        defensa = 100;
-                        vida = 100;
+                        velocidad = 130;
+                        defensa = 90;
+                        vida = 130;
                         break;
                     case 2:
                         // Elección tanque
@@ -98,9 +98,9 @@ public class Tema2Videojuego {
                         // Elección asesino
                         System.out.println("Tu personaje es asesino");
                         ataque2 = 150;
-                        velocidad2 = 150;
-                        defensa2 = 100;
-                        vida2 = 100;
+                        velocidad2 = 130;
+                        defensa2 = 90;
+                        vida2 = 130;
                         break;
                     case 2:
                         // Elección tanque
