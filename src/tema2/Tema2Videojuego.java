@@ -64,9 +64,9 @@ public class Tema2Videojuego {
                         // Elección asesino
                         System.out.println("Tu personaje es asesino");
                         ataque = 150;
-                        velocidad = 150;
-                        defensa = 100;
-                        vida = 100;
+                        velocidad = 130;
+                        defensa = 90;
+                        vida = 130;
                         break;
                     case 2:
                         // Elección tanque
@@ -98,9 +98,9 @@ public class Tema2Videojuego {
                         // Elección asesino
                         System.out.println("Tu personaje es asesino");
                         ataque2 = 150;
-                        velocidad2 = 150;
-                        defensa2 = 100;
-                        vida2 = 100;
+                        velocidad2 = 130;
+                        defensa2 = 90;
+                        vida2 = 130;
                         break;
                     case 2:
                         // Elección tanque
@@ -250,7 +250,7 @@ public class Tema2Videojuego {
             if (velocidad > velocidad2) {
                 System.out.println("El más rápido es " + nombre + ", por lo que ataca primero");
 
-                // 🆕 ELECCIÓN DE ACCIÓN JUGADOR 1
+                // Elección jugador1
                 System.out.println(nombre + ", elige tu movimiento: 1. Atacar  2. Curarte");
                 int accion1 = sc.nextInt();
                 if (accion1 == 2 && seCuroAntes1) {
@@ -259,8 +259,8 @@ public class Tema2Videojuego {
                 }
 
                 if (accion1 == 2) {
-                    int curacion = random.nextInt(16) + 10; // cura 10-25
-                    // 🆕 Probabilidad de curación crítica
+                    int curacion = random.nextInt(16) + 10;
+                    // Random curación crítica
                     if (random.nextInt(10) == 0) {
                         curacion *= 2;
                         System.out.println("💥 ¡Curación crítica! 💥");
@@ -271,7 +271,7 @@ public class Tema2Videojuego {
                     mostrarBarraVida(vida, vidaMax1, nombre);
                     seCuroAntes1 = true;
                 } else {
-                    // 🆕 Probabilidad de fallo de ataque
+                    // Random fallo de ataque
                     if (random.nextInt(10) == 0) {
                         System.out.println("💨 ¡" + nombre + " ha fallado el ataque!");
                     } else {
@@ -292,7 +292,7 @@ public class Tema2Videojuego {
                     break;
                 }
 
-                // 🆕 ELECCIÓN DE ACCIÓN JUGADOR 2
+                // Elección jugador2
                 System.out.println(nombre2 + ", elige tu movimiento: 1. Atacar  2. Curarte");
                 int accion2 = sc.nextInt();
                 if (accion2 == 2 && seCuroAntes2) {
@@ -335,7 +335,7 @@ public class Tema2Videojuego {
             } else {
                 System.out.println("El más rápido es " + nombre2 + ", por lo que ataca primero");
 
-                // 🆕 ELECCIÓN DE ACCIÓN JUGADOR 2
+                // Elección jugador2
                 System.out.println(nombre2 + ", elige tu movimiento: 1. Atacar  2. Curarte");
                 int accion2 = sc.nextInt();
                 if (accion2 == 2 && seCuroAntes2) {
@@ -375,7 +375,7 @@ public class Tema2Videojuego {
                     break;
                 }
 
-                // 🆕 ELECCIÓN DE ACCIÓN JUGADOR 1
+                // Elección jugador1
                 System.out.println(nombre + ", elige tu movmiento: 1. Atacar  2. Curarte");
                 int accion1 = sc.nextInt();
                 if (accion1 == 2 && seCuroAntes1) {
@@ -415,8 +415,9 @@ public class Tema2Videojuego {
                     break;
                 }
             }
-            // Repetición bucle hasta que jugador1 / jugador
+            // Repetición bucle hasta que jugador1 / jugador2 sea eliminado
             ronda++;
         }
     }
 }
+
