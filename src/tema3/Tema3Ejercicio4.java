@@ -32,9 +32,9 @@ public class Tema3Ejercicio4 {
         dollar2euro(dinero);
 
         if (opcion == 1) {
-            System.out.println(euro2dollar(dinero) + " €");
+            System.out.println(euro2dollar(dinero) + " $");
         } else {
-            System.out.println(dollar2euro(dinero) + " $");
+            System.out.println(dollar2euro(dinero) + " €");
         }
     }
 }
