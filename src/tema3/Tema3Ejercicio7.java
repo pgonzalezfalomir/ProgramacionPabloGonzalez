@@ -21,17 +21,16 @@ public class Tema3Ejercicio7 {
                     primos++;
                     num = in.nextInt();
                     if (num == 0) {
-                        break;
                     }
                 } else {
                     System.out.println("El número no es primo");
                     noprimos++;
                     num = in.nextInt();
                     if (num == 0) {
-                        break;
                     }
                 }
             }
+            contador = 1;
         }
     }
 }
