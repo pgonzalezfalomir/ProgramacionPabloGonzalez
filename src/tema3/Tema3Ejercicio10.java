@@ -24,8 +24,15 @@ public class Tema3Ejercicio10 {
             case 'f':
                 Tema3Ejercicio6.main(args);
                 break;
+            case 'g':
+                System.out.println("No se hacer los números primos y he intentado hacerlo sin chatgpt, pero no lo consigo");
+                Tema3Ejercicio7.main(args);
+                break;
             case 'h':
                 Tema3Ejercicio8.main(args);
+                break;
+            case 'i':
+                Tema3Ejercicio9.main(args);
                 break;
             default:
                 System.out.println("Valor incorrecto.");
@@ -42,7 +49,9 @@ public class Tema3Ejercicio10 {
         System.out.println("'d': Conversor de euros a dólares y de dólares a euros.");
         System.out.println("'e': Mostrar tabla de multiplicar de un número.");
         System.out.println("'f': Mostrar tablas de multiplicar del 1 al 10.");
+        System.out.println("'g': Comprobador de números primos.");
         System.out.println("'h': Comprobador de fechas.");
+        System.out.println("'i': Dibujar triángulos.");
         char opcion = in.next().charAt(0);
         menu(opcion, args);
     }
