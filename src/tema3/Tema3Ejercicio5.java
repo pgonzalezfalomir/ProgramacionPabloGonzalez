@@ -4,16 +4,12 @@ import java.util.Scanner;
 
 public class Tema3Ejercicio5 {
 
-    public static int showTabla (int num) {
-        int numtabla = num;
-        if (num < 1 || num > 10) {
-            return 1;
-        } else {
+    public static void showTabla (int num) {
+
             for (int contador= 1; contador <= 10; contador++) {
-                System.out.println(numtabla + " * " + contador + " = " + numtabla * contador);
+                System.out.println(num + " * " + contador + " = " + num * contador);
             }
-            return 0;
-        }
+
     }
 
     public static void main(String[] args) {

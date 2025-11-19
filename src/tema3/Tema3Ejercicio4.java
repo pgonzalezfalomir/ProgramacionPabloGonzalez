@@ -24,14 +24,14 @@ public class Tema3Ejercicio4 {
         Scanner in = new Scanner(System.in);
 
         showMenu();
-        int opcion = in.nextInt();
+        int opcionn = in.nextInt();
 
         System.out.println("¿Cuántos dinero tienes?");
         double dinero = in.nextDouble();
         euro2dollar(dinero);
         dollar2euro(dinero);
 
-        if (opcion == 1) {
+        if (opcionn == 1) {
             System.out.println(euro2dollar(dinero) + " $");
         } else {
             System.out.println(dollar2euro(dinero) + " €");

@@ -14,21 +14,21 @@ public class Tema3Ejercicio2 {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
         System.out.println("Dame un número:");
-        int numero = in.nextInt();
-        int resultado = Tema3Ejercicio1.numberSign(numero);
-        if (resultado == 1) {
+        int numeroo = in.nextInt();
+        int resultadoo = Tema3Ejercicio1.numberSign(numeroo);
+        if (resultadoo == 1) {
             System.out.println("Es positivo");
-        } else if (resultado == 0) {
+        } else if (resultadoo == 0) {
             System.out.println("Es cero");
         } else {
             System.out.println("Es negativo");
         }
 
         System.out.println("Dime tu edad:");
-        int edad2 = in.nextInt();
-        boolean resultado2 = isAdult(edad2);
+        int edadd2 = in.nextInt();
+        boolean resultadoo2 = isAdult(edadd2);
 
-        if (resultado2 == true) {
+        if (resultadoo2 == true) {
             System.out.println("Es mayor de edad");
         } else {
             System.out.println("Es menor de edad");

@@ -29,17 +29,19 @@ public class Tema3Ejercicio8 {
             return;
         }
 
-        if ((any % 4 == 0 && any % 100 != 0) || (any % 400 == 0)) {
-            if (dia < 1 || dia > 29) {
-                System.out.println("Día incorrecto.");
+        if (mes == 2) {
+            if ((any % 4 == 0 && any % 100 != 0) || (any % 400 == 0)) {
+                if (dia < 1 || dia > 29) {
+                    System.out.println("Día incorrecto.");
+                } else {
+                    System.out.println("La fecha es válida.");
+                }
             } else {
-                System.out.println("La fecha es válida.");
-            }
-        } else {
-            if (dia < 1 || dia > 28) {
-                System.out.println("Día incorrecto.");
-            } else {
-                System.out.println("La fecha es válida.");
+                if (dia < 1 || dia > 28) {
+                    System.out.println("Día incorrecto.");
+                } else {
+                    System.out.println("La fecha es válida.");
+                }
             }
         }
     }
