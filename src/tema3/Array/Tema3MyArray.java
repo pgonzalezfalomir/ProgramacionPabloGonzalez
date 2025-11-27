@@ -1,0 +1,79 @@
+package tema3.Array;
+
+public class Tema3MyArray {
+
+    public static void main(String[] args) {
+        int [] array1;
+        array1 = new int [] {0,1,2,3,4};
+        int [] array2;
+        array2 = new int [] {5,6,7,8,9};
+    }
+
+    // Case a
+    public static void imprimirArray (int [] array1) {
+        for (int i = 0; i < 6; i++) {
+            System.out.println(array1[i]);
+        }
+    }
+
+    // Case b
+    public static void imprimirMaxArray (int [] array1) {
+        int max;
+        int max1 = 1;
+        for (int i = 0; i < array1.length; i++) {
+            max = array1[i];
+            if (max > max1) {
+                max1 = array1[i];
+            }
+        }
+        System.out.println("El número máximo es: " + max1);
+    }
+
+    // Case c
+    public static void imprimirMinArray (int [] array1) {
+        int min;
+        int min1 = 1;
+        for (int i = 0; i < array1.length; i++) {
+            min = array1[i];
+            if (min < min1) {
+                min1 = array1[i];
+            }
+        }
+        System.out.println("El número mínimo es: " + min1);
+    }
+
+    // Case d
+    public static void imprimirMedia (int [] array1) {
+        int suma = 0;
+        for (int i = 0; i < array1.length; i++) {
+            suma = suma + array1[i];
+        }
+        int media = suma / array1.length;
+        System.out.println("La media del array es: " + media);
+    }
+
+    // Case e
+    public static boolean existeValor (int [] array1, int num) {
+        for (int i = 0; i < array1.length; i++) {
+            if (num == array1[i]) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    // Case f
+    public static void sumaVectores (int [] array1, int [] array2) {
+        int suma1;
+        int suma2;
+        int sumavect;
+        for (int i = 0; i < array1.length; i++) {
+            suma1 = array1.length;
+        }
+        for (int i = 0; i < array2.length; i++) {
+            suma2 = array2.length;
+        }
+
+        }
+    }
+}
