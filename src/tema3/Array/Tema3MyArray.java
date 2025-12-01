@@ -11,7 +11,7 @@ public class Tema3MyArray {
 
     // Case a
     public static void imprimirArray (int [] array1) {
-        for (int i = 0; i < 6; i++) {
+        for (int i = 0; i < array1.length; i++) {
             System.out.println(array1[i]);
         }
     }
@@ -32,10 +32,9 @@ public class Tema3MyArray {
     // Case c
     public static void imprimirMinArray (int [] array1) {
         int min;
-        int min1 = 1;
-        for (int i = 0; i < array1.length; i++) {
-            min = array1[i];
-            if (min < min1) {
+        int min1 = array1[0];
+        for (int i = 1; i < array1.length; i++) {
+            if (array1[i] < min1) {
                 min1 = array1[i];
             }
         }
@@ -65,9 +64,16 @@ public class Tema3MyArray {
     // Case f
     public static void sumaVectores (int [] array1, int [] array2) {
         for (int i = 0; i < array1.length; i++) {
+            System.out.println("La suma de los vectores es: " + (array2[i] + array1[i]));
+        }
+    }
+
+    // Case g
+    public static void restaVectores (int [] array1, int [] array2) {
+        for (int i = 0; i < array1.length; i++) {
             System.out.println("La resta de los vectores es: " + (array2[i] - array1[i]));
         }
-        }
+    }
 
     // Case h
     public static void productoEscalar (int [] array1, int [] array2) {
@@ -103,4 +109,3 @@ public class Tema3MyArray {
         return true;
     }
     }
-}
