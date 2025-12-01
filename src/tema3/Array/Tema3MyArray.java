@@ -64,16 +64,43 @@ public class Tema3MyArray {
 
     // Case f
     public static void sumaVectores (int [] array1, int [] array2) {
-        int suma1;
-        int suma2;
-        int sumavect;
         for (int i = 0; i < array1.length; i++) {
-            suma1 = array1.length;
+            System.out.println("La resta de los vectores es: " + (array2[i] - array1[i]));
         }
-        for (int i = 0; i < array2.length; i++) {
-            suma2 = array2.length;
         }
 
+    // Case h
+    public static void productoEscalar (int [] array1, int [] array2) {
+        int resultado = 0;
+        for (int i = 0; i < array1.length; i++) {
+            System.out.println("El producto escalar de los vectores es: " + (array1[i] * array2[i]));
         }
+    }
+
+    // Case i
+    public static String arrayInversa (int [] array1) {
+        String resultado = "";
+        for (int i = array1.length - 1 ; i >= 0 ; i--) {
+            resultado += array1[i] + "";
+        }
+        return resultado;
+    }
+
+    // Case j
+    public static void procedimientoArrayInverso (int [] array1) {
+        for (int i = array1.length - 1; i >= 0 ; i--) {
+            System.out.println(array1[i]);
+        }
+    }
+
+    // Case k
+    public static boolean esCapicua (int [] array1) {
+        for (int i = 0; i < array1.length / 2; i++) {
+            if (array1[i] != array1[array1.length - 1 - i]) {
+                return false;
+            }
+        }
+        return true;
+    }
     }
 }
