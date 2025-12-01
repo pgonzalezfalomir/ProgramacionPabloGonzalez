@@ -63,6 +63,48 @@ public class Tema3MenuMyArray {
                         }
                         break;
                     case 'f':
+                        int [] array6;
+                        array6 = new int [] {0,1,2,3,4};
+                        int [] array7;
+                        array7 = new int [] {5,6,7,8,9};
+                        Tema3MyArray.sumaVectores(array6, array7);
+                        break;
+                    case 'g':
+                        int [] array8;
+                        array8 = new int [] {0,1,2,3,4};
+                        int [] array9;
+                        array9 = new int [] {5,6,7,8,9};
+                        Tema3MyArray.restaVectores(array8, array9);
+                        break;
+                    case 'h':
+                        int [] array10;
+                        array10 = new int [] {0,1,2,3,4};
+                        int [] array11;
+                        array11 = new int [] {5,6,7,8,9};
+                        Tema3MyArray.productoEscalar(array10, array11);
+                        break;
+                    case 'i':
+                        int [] array12;
+                        array12 = new int [] {0,1,2,3,4};
+                        System.out.println(Arrays.toString(array12));
+                        System.out.println("En inversa:");
+                        System.out.println(Tema3MyArray.arrayInversa(array12));
+                        break;
+                    case 'j':
+                        int [] array13;
+                        array13 = new int [] {0,1,2,3,4};
+                        Tema3MyArray.procedimientoArrayInverso(array13);
+                        break;
+                    case 'k':
+                        int [] array14;
+                        array14 = new int [] {0,1,2,1,0};
+                        if (Tema3MyArray.esCapicua(array14)) {
+                            System.out.println("Es capicua");
+                        } else {
+                            System.out.println("No es capicua");
+                        }
+                        break;
+                    case 'l':
                 }
         }
     }
