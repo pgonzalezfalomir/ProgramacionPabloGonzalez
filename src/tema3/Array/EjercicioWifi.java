@@ -32,7 +32,7 @@ public class EjercicioWifi {
             senal--;
         }
 
-        senal = potencia + 1;
+        senal = potencia - 1;
         for (int i = posicionRouter + 1; i < 20 && senal > 0; i++) {
             cobertura[i] = senal;
             senal--;
@@ -41,5 +41,6 @@ public class EjercicioWifi {
         for (int i = 0; i < 20; i++) {
             System.out.print(cobertura[i] + " ");
         }
+        System.out.println();
     }
 }
