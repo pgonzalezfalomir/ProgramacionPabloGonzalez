@@ -59,7 +59,11 @@ public class Tema2VideojuegoModular {
     }
 
     public static int[] crearPersonajePersonalizado() {
-        int vida, ataque, defensa, velocidad;
+        int vida;
+        int ataque;
+        int defensa;
+        int velocidad;
+
         do {
             velocidad = validarStats("Introduce velocidad:");
             ataque = validarStats("Introduce ataque:");
