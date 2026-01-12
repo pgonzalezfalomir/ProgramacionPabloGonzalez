@@ -7,6 +7,6 @@ public class RelojMain {
         reloj.setHora(14);
         reloj.setMinutos(34);
         reloj.setSegundos(44);
-        reloj.horaFinal();
+        System.out.println(reloj);
     }
 }

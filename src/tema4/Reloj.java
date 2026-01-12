@@ -102,4 +102,16 @@ public class Reloj { // Inicialización variables
             this.AMPM = false;
         }
     }
+
+    public String toString() {
+        if (formato24) {
+            return "Son las " + hora + ":" + minutos + ":" + segundos;
+        } else {
+            if (AMPM) {
+                return "Son las " + hora + ":" + minutos + ":" + segundos + " AM";
+            } else {
+                return "Son las " + hora + ":" + minutos + ":" + segundos + " PM";
+            }
+        }
+    }
 }
