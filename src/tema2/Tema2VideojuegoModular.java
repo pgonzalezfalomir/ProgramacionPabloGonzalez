@@ -17,8 +17,14 @@ public class Tema2VideojuegoModular {
         String nombre2 = leerNombres();
         int[] stats2 = configurarPersonaje();
 
-        int vida = stats1[0], ataque = stats1[1], defensa = stats1[2], velocidad = stats1[3];
-        int vida2 = stats2[0], ataque2 = stats2[1], defensa2 = stats2[2], velocidad2 = stats2[3];
+        int vida = stats1[0];
+        int ataque = stats1[1];
+        int defensa = stats1[2];
+        int velocidad = stats1[3];
+        int vida2 = stats2[0];
+        int ataque2 = stats2[1];
+        int defensa2 = stats2[2];
+        int velocidad2 = stats2[3];
 
         inicioCombate(nombre, vida, ataque, defensa, velocidad, nombre2, vida2, ataque2, defensa2, velocidad2);
     }
@@ -39,7 +45,7 @@ public class Tema2VideojuegoModular {
     public static int[] configurarPersonaje() {
         Scanner in = new Scanner(System.in);
         System.out.println("¿Personaje predeterminado (1) o personalizado (2)?");
-        int opciones = Integer.parseInt(in.nextLine());
+        int opciones = in.nextInt();
         if (opciones == 1) {
             return elegirPersonajePredeterminado();
         }
@@ -49,7 +55,7 @@ public class Tema2VideojuegoModular {
     public static int[] elegirPersonajePredeterminado() {
         Scanner in = new Scanner(System.in);
         System.out.println("Asesino (1) | Tanque (2) | Híbrido (3)");
-        int personajes = Integer.parseInt(in.nextLine());
+        int personajes = in.nextInt();
         if (personajes == 1) {
             return new int[]{130, 150, 90, 130};
         } if (personajes == 2) {
@@ -79,7 +85,7 @@ public class Tema2VideojuegoModular {
     public static int validarStats(String msj) {
         Scanner in = new Scanner(System.in);
         System.out.println(msj);
-        int val = Integer.parseInt(in.nextLine());
+        int val = in.nextInt();
         if (val > 200) {
             return 200;
         }
