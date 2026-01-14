@@ -3,21 +3,22 @@ package tema4;
 import java.util.Scanner;
 
 public class Persona {
-    String DNI;
+    final String DNI;
     String nombre;
     String apellido1;
     String apellido2;
     int edad;
-    public static final int edadDefault = 20;
     boolean isAdult;
     boolean checkDNI;
+    private static final int adultAge = 18;
+    private static final int retiredAge = 65;
 
     public Persona() { // Constructor vacío
         this.DNI = "12345678A";
         this.nombre = "Pablo";
         this.apellido1 = "González";
         this.apellido2 = "Soto";
-        this.edad = edadDefault;
+        this.edad = 20;
     }
 
     public Persona(String DNI, String nombre, String apellido1, String apellido2, int edad) { // Constructor parámetros
@@ -28,15 +29,27 @@ public class Persona {
         this.edad = edad;
     }
 
-    public boolean isAdult(int edad) {
-        if (edad >= 18) {
-            return true;
+    public Persona(String DNI) { // Constructor DNI
+        this.DNI = DNI;
+    }
+
+    public String isAdult() {
+        if (edad >= adultAge) {
+            return "Es mayor de edad";
         } else {
-            return false;
+            return "Es menor de edad";
         }
     }
 
-    public boolean checkDNI(int numerosDNI) {
+    public String isRetired() {
+        if (edad > retiredAge) {
+            return "Esta jubilado";
+        } else {
+            return "No esta jubilado";
+        }
+    }
+
+    public static String checkDNI() {
         char letraCorrecta = ' ';
         Scanner in = new Scanner(System.in);
         System.out.println("Dime los números del DNI:");
@@ -45,7 +58,7 @@ public class Persona {
         System.out.println("Dime la letra de tu DNI:");
         char letraDNI = in.next().toUpperCase().charAt(0);
         if (letraDNI == 'I' || letraDNI == 'O' || letraDNI == 'U' || letraDNI == 'Ñ') {
-            return false;
+            return "Es falso";
         } else {
             switch (resto) {
                 case 0:
@@ -119,10 +132,26 @@ public class Persona {
                     break;
             }
             if (letraCorrecta == letraDNI) {
-                return true;
+                return "Es válido";
             } else {
-                return false;
+                return "Es falso";
             }
+        }
+    }
+
+    public void print() {
+        System.out.println("Esta persona se llama: " + nombre + " " + apellido1 + " " + apellido2 + ", con edad " + edad + ", y DNI " + DNI);
+    }
+
+    public String toString() { // print
+        return "La información de la persona es: " + nombre + " " + apellido1 + " " + apellido2 + ", " + edad + ", " + DNI;
+    }
+
+    public static int ageDiference(int edad, int edad2) {
+        if (edad > edad2) {
+            return (edad - edad2);
+        } else {
+            return (edad2 - edad);
         }
     }
 
@@ -146,15 +175,19 @@ public class Persona {
         return edad;
     }
 
-    public void setDNI(String DNI) {
-        this.DNI = DNI;
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setApellido1(String apellido1) {
+        this.apellido1 = apellido1;
+    }
+
+    public void setApellido2(String apellido2) {
+        this.apellido2 = apellido2;
     }
 
     public void setEdad(int edad) {
-        if (edad < 0 || edad > 100) {
-            this.edad = edad;
-        } else {
-            this.edad = edadDefault;
-        }
+        this.edad = edad;
     }
 }
