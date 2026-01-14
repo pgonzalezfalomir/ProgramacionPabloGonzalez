@@ -37,6 +37,6 @@ public class PersonaMain {
         System.out.println(Persona.checkDNI());
         persona2.print();
         System.out.println(persona2.toString());
-        System.out.println(Persona.ageDiference(persona.edad, persona2.edad));
+        System.out.println("La diferencia de edad entre las 2 personas es de: " + Persona.ageDiference(persona.edad, persona2.edad));
     }
 }
