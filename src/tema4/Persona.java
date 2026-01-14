@@ -33,7 +33,7 @@ public class Persona {
         this.DNI = DNI;
     }
 
-    public String isAdult() {
+    public String isAdult() { // comprobacion mayor de edad por edad
         if (edad >= adultAge) {
             return "Es mayor de edad";
         } else {
@@ -41,7 +41,7 @@ public class Persona {
         }
     }
 
-    public String isRetired() {
+    public String isRetired() { // comprobacion jubilado por edad
         if (edad > retiredAge) {
             return "Esta jubilado";
         } else {
@@ -49,7 +49,7 @@ public class Persona {
         }
     }
 
-    public static String checkDNI() {
+    public static String checkDNI() { // comprobacion DNI valido o falso
         char letraCorrecta = ' ';
         Scanner in = new Scanner(System.in);
         System.out.println("Dime los números del DNI:");
@@ -139,19 +139,21 @@ public class Persona {
         }
     }
 
-    public void print() {
+    public void print() { // print
         System.out.println("Esta persona se llama: " + nombre + " " + apellido1 + " " + apellido2 + ", con edad " + edad + ", y DNI " + DNI);
     }
 
-    public String toString() { // print
+    public String toString() { // toString
         return "La información de la persona es: " + nombre + " " + apellido1 + " " + apellido2 + ", " + edad + ", " + DNI;
     }
 
-    public static int ageDiference(int edad, int edad2) {
+    public static int ageDiference(int edad, int edad2) { // calculo diferencia de edad
         if (edad > edad2) {
             return (edad - edad2);
-        } else {
+        } else if (edad2 > edad) {
             return (edad2 - edad);
+        } else {
+            return 0;
         }
     }
 
@@ -175,19 +177,19 @@ public class Persona {
         return edad;
     }
 
-    public void setNombre(String nombre) {
+    public void setNombre(String nombre) { // Setter Nombre
         this.nombre = nombre;
     }
 
-    public void setApellido1(String apellido1) {
+    public void setApellido1(String apellido1) { // Setter Apellido1
         this.apellido1 = apellido1;
     }
 
-    public void setApellido2(String apellido2) {
+    public void setApellido2(String apellido2) { // Setter Apellido2
         this.apellido2 = apellido2;
     }
 
-    public void setEdad(int edad) {
+    public void setEdad(int edad) { // Setter Edad
         this.edad = edad;
     }
 }
