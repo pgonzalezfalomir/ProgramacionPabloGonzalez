@@ -40,6 +40,8 @@ public class JuegoRolHero {
                         } else {
                             enemigosVivos = true;
 
+                            // pablo.ataque(horda[i]); No encuentro el motivo de porque no me funciona la funcion ataque.
+
                             if (horda[i].getHealth() > 0) {
                                 // horda[i].ataque(pablo); No encuentro el motivo de porque no me funciona la funcion ataque.
                             } else {
@@ -67,3 +69,4 @@ public class JuegoRolHero {
     }
 
 }
+
