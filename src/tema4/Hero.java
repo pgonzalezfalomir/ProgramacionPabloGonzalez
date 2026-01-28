@@ -51,7 +51,7 @@ public class Hero {
         return this.health;
     }
 
-    public  int rest() { // Función curación con descanso
+    public int rest() { // Función curación con descanso
         this.health = this.health + curacionRest;
         return this.health;
     }
@@ -73,6 +73,7 @@ public class Hero {
         if (this.experience >= expNecesaria) {
             this.levelUp();
         }
+        System.out.println("Ha hecho " + dano + " de daño.");
     }
 
     public void levelUp() { // Procedimiento subida de nivel
