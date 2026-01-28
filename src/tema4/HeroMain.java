@@ -13,6 +13,7 @@ public class HeroMain {
         System.out.println(h1.drinkPotion());
         System.out.println("El héroe se ha curado 10 de vida");
         System.out.println(h1.rest());
+        System.out.println("El héroe se ha curado 50 de vida");
         h1.levelUp();
         System.out.println(h1.toString());
 
@@ -25,11 +26,13 @@ public class HeroMain {
         enemigo.setAttack(25);
         enemigo.setDefense(20);
         System.out.println(enemigo.drinkPotion());
+        System.out.println("El enemigo se ha curado 10 de vida");
         System.out.println(enemigo.rest());
+        System.out.println("El enemigo se ha curado 50 de vida");
         enemigo.levelUp();
         System.out.println(enemigo.toString());
 
-        //h1.ataque(enemigo); No funciona, no entiendo el error
-        //enemigo.ataque(h1); No funciona, no entiendo el error
+        h1.ataque(enemigo);
+        enemigo.ataque(h1);
     }
 }
