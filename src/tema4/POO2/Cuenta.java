@@ -1,57 +1,60 @@
 package tema4.POO2;
 
-import java.util.Scanner;
-
 public class Cuenta {
-    // Inicialización variables
-    String numeroCuenta;
-    double saldo;
+    // inicialización
+    private String numeroCuenta;
+    private double saldo;
 
-    private static final String numeroCuentaDefault = "1111222233334444";
-    private static final double saldoDefault = 50;
+    // inicialización por defecto
+    private static final String CUENTA_POR_DEFECTO = "1111222233334444";
+    private static final double SALDO_POR_DEFECTO = 50.0;
 
-    public Cuenta () { // Constructor vacío
-        this.numeroCuenta = numeroCuentaDefault;
-        this.saldo = saldoDefault;
+    public Cuenta() { // constructor vacío
+        this.numeroCuenta = CUENTA_POR_DEFECTO;
+        this.saldo = SALDO_POR_DEFECTO;
     }
 
-    public Cuenta (String numeroCuenta, double saldo) { // Constructor con parámetros
+    public Cuenta(String numeroCuenta, double saldo) { // constructor con parámetros
         this.numeroCuenta = numeroCuenta;
         this.saldo = saldo;
     }
 
-    public double mostrarSaldo (double saldo) { // funcion consulta de saldo
-        return saldo;
-    }
-
-    public double recibirAbonos (double saldo, double extra) { // funcion recibir abonos
-        this.saldo = this.saldo + extra;
+    // función consulta saldo
+    public double consultarSaldo() {
         return this.saldo;
     }
 
-    public double pagarRecibos (double saldo, double pago) { // funcion pagar recibos
-        this.saldo = this.saldo - pago;
-        return this.saldo;
+    // procedimiento recibir abono
+    public void recibirAbono(double cantidad) {
+        if (cantidad > 0) {
+            this.saldo = this.saldo + cantidad;
+            System.out.println("Tu nuevo saldo es: " + this.saldo + "$");
+        }
     }
 
-    public String getNumeroCuenta () { // Getter numero cuenta
+    // procedimiento pagar recibo
+    public void pagarRecibo(double importe) {
+        if (importe <= this.saldo) {
+            this.saldo = this.saldo - importe;
+        } else {
+            System.out.println("Error: Saldo insuficiente para pagar el recibo.");
+        }
+    }
+
+    // getters y setters
+    public String getNumeroCuenta() {
         return numeroCuenta;
     }
 
-    public double getSaldo () { // Getter saldo
-        return saldo;
-    }
-
-    public void setNumeroCuenta (String numeroCuenta) { // Setter numero cuenta
-        Scanner in = new Scanner(System.in);
-        while (this.numeroCuenta.length() != 16) {
-            System.out.println("Numero de cuenta incorrecto, vuelve a ponerlo");
-            this.numeroCuenta = in.nextLine();
+    public void setNumeroCuenta(String numeroCuenta) {
+        if (numeroCuenta.length() == 16) {
+            this.numeroCuenta = numeroCuenta;
+        } else {
+            System.out.println("Error: El número de cuenta debe tener 16 dígitos.");
         }
-        this.numeroCuenta = numeroCuenta;
     }
 
-    public void setSaldo (double saldo) { // Setter saldo
-        this.saldo = saldo;
+    public double getSaldo() {
+        return saldo;
     }
 }
