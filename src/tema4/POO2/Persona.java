@@ -52,6 +52,7 @@ public class Persona {
     public static Persona buscarPersona() {
         System.out.print("Introduce DNI de la persona:");
         String dni = in.nextLine();
+
         for (Persona p1 : tema4.POO2.PruebaCuentas.listaPersonas) {
             if (p1.getDni().equalsIgnoreCase(dni)) {
                 return p1;
@@ -74,12 +75,14 @@ public class Persona {
 
     // moroso
     public boolean esMorosa() {
+        boolean morosa = false;
+
         for (int i = 0; i < contadorCuentas; i++) {
             if (this.cuentas[i].getSaldo() < 0) {
-                return true;
+                morosa = true;
             }
         }
-        return false;
+        return morosa;
     }
 
     // getters y setters
