@@ -125,7 +125,7 @@ public class Cuenta {
     // metodo para buscar cuenta
     public static Cuenta encontrarCuenta(Persona p1, String iban) {
         for (Cuenta c1 : p1.getCuentas()) {
-            if (c1 != null && c1.getNumeroCuenta().equals(iban)) {
+            if (c1 != null && c1.getNumeroCuenta() == iban) {
                 return c1;
             }
         }
