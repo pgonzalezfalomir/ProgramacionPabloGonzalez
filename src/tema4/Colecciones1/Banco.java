@@ -37,11 +37,7 @@ public class Banco {
     }
 
     public void setEdad(int edad) {
-        if (edad < 1 || edad > 100) {
-            this.edad = DEFAULT_AGE;
-        } else {
-            this.edad = edad;
-        }
+        this.edad = edad;
     }
 
     public String getDNI() {
