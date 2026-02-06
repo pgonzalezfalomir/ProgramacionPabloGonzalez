@@ -33,6 +33,9 @@ public class ListaCompraMejorada {
                     } else {
                         listaCompra.add(producto);
                         System.out.println("Has añadido el producto a la lista.");
+                        for (String compra : listaCompra) {
+                            System.out.println(compra);
+                        }
                     }
                     break;
                 case 2:
@@ -44,8 +47,13 @@ public class ListaCompraMejorada {
                     } else {
                         carroCompra.add(producto);
                         System.out.println("Has añadido el producto al carro.");
+                        carroCompra.forEach(System.out::println);
+                        
                         listaCompra.remove(producto);
                         System.out.println("Producto eliminado de la lista.");
+                        for (String compra : listaCompra) {
+                            System.out.println(compra);
+                        }
                     }
                     break;
                 case 3:
