@@ -1,0 +1,40 @@
+package tema6.POO3.ej5;
+
+import tema6.POO3.ej6.IPublicacionConReaccion;
+
+public class PublicacionTexto implements IPublicacion, IPublicacionConReaccion {
+    private String texto;
+
+    private final String TEXTO_DEFAULT = "Hola";
+
+    public PublicacionTexto () {
+        this.texto = TEXTO_DEFAULT;
+    }
+
+    public PublicacionTexto (String texto) {
+        this.texto = texto;
+    }
+
+    @Override
+    public void publicar() {
+        System.out.println("Has publicado: " + texto);
+    }
+
+    @Override
+    public void compartir() {
+        System.out.println("Has compartido este texto: " + texto);
+    }
+
+    @Override
+    public void comentar() {
+        System.out.println("Has comentado en este texto: " + texto);
+    }
+
+    public String getTexto() {
+        return texto;
+    }
+
+    public void setTexto(String texto) {
+        this.texto = texto;
+    }
+}
